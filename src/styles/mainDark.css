@@ -1,9 +1,6 @@
-$backgroundColor: #181818;
-$backgroundColor2: rgba(18, 18, 18, 0.6);
-
 html, body {
     margin:0px;
-    background-color: $backgroundColor;
+    background-color: #181818;
     font-family:helvetica;
     color:white;
     font-size:16px;
@@ -282,7 +279,7 @@ button.navButton svg {
 }
 
 .darkPageContainer {
-    background-color:$backgroundColor2;
+    background-color:rgba(18, 18, 18, 0.6);
     width:100%;
 }
 

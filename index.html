@@ -233,7 +233,7 @@
         data: {
           workAvailability: jsonData.isAvailable,
           themeVariable: false,
-          stylesheetLink: "src/styles/mainDark.scss",
+          stylesheetLink: "src/styles/mainDark.css",
           titleJob: '',
           filterText: '',
           jobList: jsonData.jobs,
@@ -299,7 +299,7 @@
           },
           toggle: function() {
             this.themeVariable = !this.themeVariable;
-            this.stylesheetLink = this.themeVariable ? 'src/styles/main.scss' : 'src/styles/mainDark.scss';
+            this.stylesheetLink = this.themeVariable ? 'src/styles/main.css' : 'src/styles/mainDark.css';
           }
         }
       });

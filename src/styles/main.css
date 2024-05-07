@@ -1,12 +1,8 @@
-$backgroundColor: #EBEBEB;
-$backgroundColor2: rgba(210, 210, 210, 0.4);
-$fontColor: #252525;
-
 html, body {
     margin:0px;
-    background-color: $backgroundColor;
+    background-color: #EBEBEB;
     font-family:helvetica;
-    color:$fontColor;
+    color:#252525;
     font-size:16px;
     transition:background-color 0.1s ease-in-out;
     animation: 44s -27s move infinite ease-in-out alternate;
@@ -51,7 +47,7 @@ a:focus {
 }
 
 #navTitle {
-    color:$fontColor;
+    color:#252525;
     font-size:30px;
     font-weight:bold;
 }
@@ -101,7 +97,7 @@ button.navButton svg {
 }
 
 .navButton:not(button) svg {
-    fill:$fontColor;
+    fill:#252525;
 }
 
 #headerWrapper {
@@ -284,7 +280,7 @@ button.navButton svg {
 }
 
 .darkPageContainer {
-    background-color:$backgroundColor2;
+    background-color:rgba(210, 210, 210, 0.4);
     width:100%;
 }
 
@@ -315,7 +311,7 @@ button.navButton svg {
 }
 
 .generalHeading {
-    color:$fontColor;
+    color:#252525;
     font-size: 40px;
     margin:0px;
 }
@@ -327,7 +323,7 @@ button.navButton svg {
 }
 
 .generalParagraph {
-    color:$fontColor;
+    color:#252525;
     font-size: 16px;
     margin:0px;
     line-height:36px;
@@ -374,7 +370,7 @@ button.navButton svg {
     margin:0px;
     border-radius:100px;
     font-size:16px;
-    color:$fontColor;
+    color:#252525;
 }
 
 #skillSectionListWrapper {
