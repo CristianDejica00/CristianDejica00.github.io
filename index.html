@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
-    <link rel="icon" href="/favicon.ico">
+    <link rel="icon" href="assets/ico.ico">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/1.0.18/vue.min.js"></script>
     <title>Cristian Dejica</title>
@@ -42,7 +42,7 @@
             </svg>
           </a>
           <button class="navButton" @click="toggle">
-            <svg v-if="themeVariable" width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg v-if="themeVariable==true" width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M15.9635 0C8.24765 0 2 6.26875 2 14C2 21.7312 8.24765 28 15.9635 28C19.7496 28 23.1795 26.4875 25.6973 24.0375C26.0097 23.7313 26.0909 23.2562 25.891 22.8687C25.6911 22.4812 25.26 22.2625 24.8289 22.3375C24.2166 22.4437 23.5919 22.5 22.9484 22.5C16.8944 22.5 11.9837 17.575 11.9837 11.5C11.9837 7.3875 14.2329 3.80625 17.5629 1.91875C17.944 1.7 18.1377 1.2625 18.044 0.8375C17.9502 0.4125 17.5879 0.0937501 17.1506 0.0562501C16.7569 0.0250001 16.3633 0.0062499 15.9635 0.0062499V0Z" />
             </svg>
             <svg v-else width="28" height="28" viewBox="0 0 28 28" xmlns="http://www.w3.org/2000/svg">
@@ -232,7 +232,7 @@
         el: '#app',
         data: {
           workAvailability: jsonData.isAvailable,
-          themeVariable: false,
+          themeVariable: localStorage.getItem("themeVal"),
           stylesheetLink: "src/styles/mainDark.css",
           titleJob: '',
           filterText: '',
@@ -242,6 +242,7 @@
           designDate: '2018-01-01'
         },
         created() {
+          this.initializeTheme();
           this.typeTitles();
         },
         computed: {
@@ -268,6 +269,10 @@
           }
         },
         methods: {
+          initializeTheme() {
+            this.themeVariable = localStorage.getItem("themeVal") == 'true' ? true : false;
+            this.stylesheetLink = this.themeVariable == true ? 'src/styles/main.css' : 'src/styles/mainDark.css';
+          },
           async typeTitles() {
             let index = 0;
             let currentTitle = '';
@@ -299,6 +304,7 @@
           },
           toggle: function() {
             this.themeVariable = !this.themeVariable;
+            localStorage.setItem("themeVal", this.themeVariable);
             this.stylesheetLink = this.themeVariable ? 'src/styles/main.css' : 'src/styles/mainDark.css';
           }
         }
