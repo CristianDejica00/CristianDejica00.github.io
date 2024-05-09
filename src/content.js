@@ -63,7 +63,7 @@ const jsonData = {
         },
         {
             "name": "Grupo9",
-            "location": "Belgium (Remote)",
+            "location": "Switzerland (Remote)",
             "position": "Full-Stack Developer & Graphic Designer",
             "description": "Worked with a server hosting company where I redesigned and developed the dashboard that their clients used. The project required vanilla languages only, such as HTML, CSS, PHP, and plain JavaScript.",
         },
