@@ -40,8 +40,8 @@ const jsonData = {
         {
             "name": "EasilyAmused",
             "location": "Florida, USA (Remote)",
-            "position": "Graphic Designer & Front-End Developer",
-            "description": "Redesigned web pages and built a large collection of widgets for a WordPress company that sells custom themes.",
+            "position": "Graphic Designer",
+            "description": "Redesigned web pages and designed a large collection of wordpress building blocks for a creative agency.",
         },
         {
             "name": "SENSE4FIT",
