@@ -1,7 +1,10 @@
 const jsonData = {
     "isAvailable": true,
-    "titleJobs": ["Web Developer", "Graphic Designer", "Game Developer"],
+    "titleJobs": ["Programmer", "Web Developer", "Graphic Designer", "Game Developer"],
     "skills": [
+        "C",
+        "C#",
+        "C++",
         "Adobe Creative Suite",
         "Adobe Illustrator",
         "Adobe InDesign",
@@ -11,9 +14,6 @@ const jsonData = {
         "Back-End",
         "Blender",
         "Bootstrap",
-        "C",
-        "C#",
-        "C++",
         "CSS",
         "Django",
         "Figma",
